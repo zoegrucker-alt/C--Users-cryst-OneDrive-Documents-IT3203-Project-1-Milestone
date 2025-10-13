@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Knowledge Quiz</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>HTTP Quiz</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="versions.html">Versions</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <h2>Test Your Knowledge!</h2>
+
+      <label>1. Who invented the World Wide Web?</label><br>
+      <input type="radio" name="q1" value="a"> Robert Cailliau<br>
+      <input type="radio" name="q1" value="b"> Tim Berners-Lee<br>
+      <input type="radio" name="q1" value="c"> Henrik Frystyk Nielsen<br><br>
+
+      <label>2. What year was HTTP/1.1 standardized?</label><br>
+      <input type="radio" name="q2" value="a"> 1991<br>
+      <input type="radio" name="q2" value="b"> 1996<br>
+      <input type="radio" name="q2" value="c"> 1997<br><br>
+
+      <label>3. What does HTTPS add to HTTP?</label><br>
+      <input type="radio" name="q3" value="a"> Encryption<br>
+      <input type="radio" name="q3" value="b"> Ads<br>
+      <input type="radio" name="q3" value="c"> Images<br><br>
+
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <p>Created by Zoe Rucker | IT 3203 | Fall 2025</p>
+  </footer>
+
+  <script src="scripts/quiz.js"></script>
+</body>
+</html>
