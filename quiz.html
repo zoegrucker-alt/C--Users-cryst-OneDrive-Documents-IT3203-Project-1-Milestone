@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Copilot Quiz</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Copilot Quiz</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body class="quiz-body">
 
-    <header class="site-header">
+  <header class="header-wrap">
+    <div class="header-inner">
+      <div class="brand">
         <h1>GitHub Copilot — Knowledge Check</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="history.html">History</a>
-            <a href="modern.html">Modern Use</a>
-            <a class="active" href="quiz.html">Quiz</a>
-        </nav>
-    </header>
+        <p class="meta">Test what you know!</p>
+      </div>
 
-    <main class="quiz-container">
-        <h2>Test Your Knowledge</h2>
-        <p class="quiz-intro">Answer all 5 questions below, then click Submit to see your score and detailed explanations.</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="modern.html">Modern</a>
+        <a href="future.html">Future</a>
+        <a href="quiz.html" class="active">Quiz</a>
+      </nav>
+    </div>
+  </header>
 
-        <form id="quizForm">
+  <main class="container quiz-container">
+    <h2>Test Your Knowledge</h2>
+    <p class="quiz-intro">Answer all 5 questions below, then click Submit to see your score and detailed explanations.</p>
 
-            <!-- Question 1 -->
-            <div class="question-card">
-                <p><strong>1. What is GitHub Copilot primarily designed to do?</strong></p>
-                <label><input type="radio" name="q1" value="a"> Host static websites</label>
-                <label><input type="radio" name="q1" value="b"> Generate boilerplate and contextual code suggestions</label>
-                <label><input type="radio" name="q1" value="c"> Replace version control systems</label>
-            </div>
+    <form id="quizForm">
 
-            <!-- Question 2 -->
-            <div class="question-card">
-                <p><strong>2. Which AI model powers GitHub Copilot?</strong></p>
-                <label><input type="radio" name="q2" value="a"> GPT-based models</label>
-                <label><input type="radio" name="q2" value="b"> Graphics optimization models</label>
-                <label><input type="radio" name="q2" value="c"> Blockchain prediction models</label>
-            </div>
+      <!-- Question 1 -->
+      <div class="question-card">
+        <p><strong>1. What is GitHub Copilot primarily designed to do?</strong></p>
+        <label><input type="radio" name="q1" value="a"> Host static websites</label>
+        <label><input type="radio" name="q1" value="b"> Generate boilerplate and contextual code suggestions</label>
+        <label><input type="radio" name="q1" value="c"> Replace version control systems</label>
+      </div>
 
-            <!-- Question 3 -->
-            <div class="question-card">
-                <p><strong>3. What is one major ethical concern surrounding AI-assisted code generation?</strong></p>
-                <label><input type="radio" name="q3" value="a"> Too many keyboard shortcuts</label>
-                <label><input type="radio" name="q3" value="b"> Possible generation of copyrighted or insecure code</label>
-                <label><input type="radio" name="q3" value="c"> Slow website loading</label>
-            </div>
+      <!-- Question 2 -->
+      <div class="question-card">
+        <p><strong>2. Which AI model powers GitHub Copilot?</strong></p>
+        <label><input type="radio" name="q2" value="a"> GPT-based models</label>
+        <label><input type="radio" name="q2" value="b"> Graphics optimization models</label>
+        <label><input type="radio" name="q2" value="c"> Blockchain prediction models</label>
+      </div>
 
-            <!-- Question 4 -->
-            <div class="question-card">
-                <p><strong>4. How does Copilot benefit web developers specifically?</strong></p>
-                <label><input type="radio" name="q4" value="a"> Creates UI components, autocompletes code, and speeds up workfl
+      <!-- Question 3 -->
+      <div class="question-card">
+        <p><strong>3. What is one major ethical concern surrounding AI-assisted code generation?</strong></p>
+        <label><input type="radio" name="q3" value="a"> Too many keyboard shortcuts</label>
+        <label><input type="radio" name="q3" value="b"> Possible generation of copyrighted or insecure code</label>
+        <label><input type="radio" name="q3" value="c"> Slow website loading</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question-card">
+        <p><strong>4. How does Copilot benefit web developers specifically?</strong></p>
+        <label><input type="radio" name="q4" value="a"> Creates UI components, autocompletes code, and speeds up workflow</label>
+        <label><input type="radio" name="q4" value="b"> Replaces all manual debugging tasks</label>
+        <label><input type="radio" name="q4" value="c"> Eliminates the need for testing</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question-card">
+        <p><strong>5. What is an important responsibility when using Copilot?</strong></p>
+        <label><input type="radio" name="q5" value="a"> Trust it blindly without review</label>
+        <label><input type="radio" name="q5" value="b"> Review suggested code for correctness, security, and licensing</label>
+        <label><input type="radio" name="q5" value="c"> Delete all comments automatically</label>
+      </div>
+
+      <button type="button" id="submitQuiz" class="quiz-button">Submit</button>
+    </form>
+
+    <div id="quizResults" class="results-section"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="small">© 2025 Zoe Rucker • IT 3203</div>
+  </footer>
+
+  <script src="scripts/quiz.js"></script>
+</body>
+</html>

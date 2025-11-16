@@ -1,12 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Evolution of HTTP — Modern</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern HTTP</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
   <header class="header-wrap">
     <div class="header-inner">
       <div class="brand">
@@ -17,7 +18,7 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="history.html">History</a>
-        <a href="modern.html">Modern</a>
+        <a class="active" href="modern.html">Modern</a>
         <a href="future.html">Future</a>
         <a href="quiz.html">Quiz</a>
       </nav>
@@ -25,24 +26,32 @@
   </header>
 
   <main class="container">
+
     <div class="section">
-      <h3>HTTP/1.1: endurance and scale</h3>
-      <p>HTTP/1.1, standardized in 1997, remained the dominant protocol for nearly two decades. It introduced persistent connections, caching policies, and other optimizations that made the web reliably scalable. Its longevity was due to balancing simplicity and capability, allowing different browsers and servers to interoperate smoothly.</p>
+      <h3>HTTP/1.1: Endurance and Scale</h3>
+      <p>Standardized in 1997, HTTP/1.1 became the backbone of the web for nearly two decades. Persistent connections, caching policies, and chunked transfer encoding enabled efficient resource delivery. Its balance of simplicity and capability allowed browsers and servers worldwide to interoperate reliably.</p>
     </div>
 
     <div class="section">
-      <h3>HTTP/2: multiplexing and efficiency</h3>
-      <p>Standardized in 2015, HTTP/2 addressed the performance challenges of heavier webpages by introducing multiplexing and binary framing. Multiplexing allows multiple requests and responses to share a single connection without causing head-of-line blocking. The result: faster page loads and better use of the underlying network without reducing content.</p>
+      <h3>HTTP/2: Multiplexing and Efficiency</h3>
+      <p>Introduced in 2015, HTTP/2 tackled performance bottlenecks caused by modern, media-heavy websites. Multiplexing allows multiple requests and responses to share one connection without head-of-line blocking. Binary framing reduced overhead, resulting in faster page loads and smoother user experiences.</p>
     </div>
 
     <div class="section">
       <h3>HTTP/3 and QUIC</h3>
-      <p>HTTP/3 is built on QUIC, a transport protocol developed by Google that uses UDP instead of TCP. QUIC reduces connection setup latency and improves resilience against packet loss, which is especially important for mobile and global traffic. By the early 2020s, major browsers began adopting HTTP/3, reflecting the web's need for speed and robustness.</p>
+      <p>HTTP/3 leverages QUIC, a transport protocol built on UDP, to reduce latency and improve resilience against packet loss. This is crucial for mobile networks and global traffic. By the early 2020s, major browsers adopted HTTP/3, marking a shift toward speed, reliability, and improved web performance.</p>
     </div>
+
+    <div class="section">
+      <h3>Modern Practices</h3>
+      <p>Developers today leverage HTTPS by default, implement caching strategies, and use content delivery networks (CDNs) to optimize performance. Modern web frameworks and APIs rely heavily on these protocols for secure and efficient data delivery, highlighting HTTP's evolving role in supporting fast, safe, and scalable applications.</p>
+    </div>
+
   </main>
 
   <footer class="site-footer">
-    <div class="small">© 2025 Zoe Rucker • IT 3203 • Sources: MDN, F5, IETF</div>
+    <div class="small">© 2025 Zoe Rucker • IT 3203 • Sources: MDN, IETF, F5 Networks</div>
   </footer>
+
 </body>
 </html>
