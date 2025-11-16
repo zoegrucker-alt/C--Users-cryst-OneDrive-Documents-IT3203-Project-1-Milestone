@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTTP Knowledge Quiz</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Copilot Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>HTTP Quiz</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="history.html">History</a>
-      <a href="versions.html">Versions</a>
-      <a href="quiz.html">Quiz</a>
-    </nav>
-  </header>
 
-  <main>
-    <form id="quizForm">
-      <h2>Test Your Knowledge!</h2>
+<body class="quiz-body">
 
-      <label>1. Who invented the World Wide Web?</label><br>
-      <input type="radio" name="q1" value="a"> Robert Cailliau<br>
-      <input type="radio" name="q1" value="b"> Tim Berners-Lee<br>
-      <input type="radio" name="q1" value="c"> Henrik Frystyk Nielsen<br><br>
+    <header class="site-header">
+        <h1>GitHub Copilot — Knowledge Check</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="modern.html">Modern Use</a>
+            <a class="active" href="quiz.html">Quiz</a>
+        </nav>
+    </header>
 
-      <label>2. What year was HTTP/1.1 standardized?</label><br>
-      <input type="radio" name="q2" value="a"> 1991<br>
-      <input type="radio" name="q2" value="b"> 1996<br>
-      <input type="radio" name="q2" value="c"> 1997<br><br>
+    <main class="quiz-container">
+        <h2>Test Your Knowledge</h2>
+        <p class="quiz-intro">Answer all 5 questions below, then click Submit to see your score and detailed explanations.</p>
 
-      <label>3. What does HTTPS add to HTTP?</label><br>
-      <input type="radio" name="q3" value="a"> Encryption<br>
-      <input type="radio" name="q3" value="b"> Ads<br>
-      <input type="radio" name="q3" value="c"> Images<br><br>
+        <form id="quizForm">
 
-      <button type="button" onclick="checkAnswers()">Submit</button>
-    </form>
+            <!-- Question 1 -->
+            <div class="question-card">
+                <p><strong>1. What is GitHub Copilot primarily designed to do?</strong></p>
+                <label><input type="radio" name="q1" value="a"> Host static websites</label>
+                <label><input type="radio" name="q1" value="b"> Generate boilerplate and contextual code suggestions</label>
+                <label><input type="radio" name="q1" value="c"> Replace version control systems</label>
+            </div>
 
-    <div id="result"></div>
-  </main>
+            <!-- Question 2 -->
+            <div class="question-card">
+                <p><strong>2. Which AI model powers GitHub Copilot?</strong></p>
+                <label><input type="radio" name="q2" value="a"> GPT-based models</label>
+                <label><input type="radio" name="q2" value="b"> Graphics optimization models</label>
+                <label><input type="radio" name="q2" value="c"> Blockchain prediction models</label>
+            </div>
 
-  <footer>
-    <p>Created by Zoe Rucker | IT 3203 | Fall 2025</p>
-  </footer>
+            <!-- Question 3 -->
+            <div class="question-card">
+                <p><strong>3. What is one major ethical concern surrounding AI-assisted code generation?</strong></p>
+                <label><input type="radio" name="q3" value="a"> Too many keyboard shortcuts</label>
+                <label><input type="radio" name="q3" value="b"> Possible generation of copyrighted or insecure code</label>
+                <label><input type="radio" name="q3" value="c"> Slow website loading</label>
+            </div>
 
-  <script src="scripts/quiz.js"></script>
-</body>
-</html>
+            <!-- Question 4 -->
+            <div class="question-card">
+                <p><strong>4. How does Copilot benefit web developers specifically?</strong></p>
+                <label><input type="radio" name="q4" value="a"> Creates UI components, autocompletes code, and speeds up workfl

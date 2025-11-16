@@ -1,40 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern HTTP and Beyond</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Evolution of HTTP — Modern</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>Modern HTTP and Beyond</h1>
+  <header class="header-wrap">
+    <div class="header-inner">
+      <div class="brand">
+        <h1>Modern HTTP</h1>
+        <p class="meta">HTTP/1.1 → HTTP/2 → HTTP/3</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="modern.html">Modern</a>
+        <a href="future.html">Future</a>
+        <a href="quiz.html">Quiz</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="history.html">Early History</a>
-    <a href="modern.html">Modern Era</a>
-    <a href="quiz.html">Quiz</a>
-  </nav>
+  <main class="container">
+    <div class="section">
+      <h3>HTTP/1.1: endurance and scale</h3>
+      <p>HTTP/1.1, standardized in 1997, remained the dominant protocol for nearly two decades. It introduced persistent connections, caching policies, and other optimizations that made the web reliably scalable. Its longevity was due to balancing simplicity and capability, allowing different browsers and servers to interoperate smoothly.</p>
+    </div>
 
-  <main>
-    <h2>HTTP/2 and HTTP/3</h2>
-    <p>
-      With the web’s growth, speed and efficiency became crucial. HTTP/2 (2015) brought multiplexing and binary framing,
-      making websites load faster and more efficiently. HTTP/3, built on QUIC, uses UDP to reduce delay and packet loss,
-      ensuring smoother communication across devices.
-    </p>
+    <div class="section">
+      <h3>HTTP/2: multiplexing and efficiency</h3>
+      <p>Standardized in 2015, HTTP/2 addressed the performance challenges of heavier webpages by introducing multiplexing and binary framing. Multiplexing allows multiple requests and responses to share a single connection without causing head-of-line blocking. The result: faster page loads and better use of the underlying network without reducing content.</p>
+    </div>
 
-    <h3>The Future of HTTP</h3>
-    <p>
-      The next iterations of HTTP may focus on deeper encryption, privacy, and integration with IoT and AI systems. 
-      As technology evolves, HTTP continues to adapt—remaining the invisible backbone of our connected world.
-    </p>
+    <div class="section">
+      <h3>HTTP/3 and QUIC</h3>
+      <p>HTTP/3 is built on QUIC, a transport protocol developed by Google that uses UDP instead of TCP. QUIC reduces connection setup latency and improves resilience against packet loss, which is especially important for mobile and global traffic. By the early 2020s, major browsers began adopting HTTP/3, reflecting the web's need for speed and robustness.</p>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Zoe Rucker | The Evolution of HTTP</p>
+  <footer class="site-footer">
+    <div class="small">© 2025 Zoe Rucker • IT 3203 • Sources: MDN, F5, IETF</div>
   </footer>
 </body>
 </html>
